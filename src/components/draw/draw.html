@@ -1,0 +1,14 @@
+<div class="boxDraw">
+    <div class="drawZx">
+        <img src="../../assets/img/编组 6@2x.png" class="drawLogo animated flipInY" alt="">
+        <!-- <ul class="draw_ul clearfix">
+            <li class="draw_1"></li>
+            <li class="draw_2"></li>
+            <li class="draw_3"></li>
+            <li class="draw_4"></li>
+        </ul> -->
+        <transition-group name="slide-fade"  class="draw_ul clearfix ul" tag="ul">
+            <li v-for="(item,index) in itemsDraw" :key="item" :style="{'transition-delay': index/10+'s'}" :class="item" class="li" @click="clickDraw(item)" ></li>
+        </transition-group>
+    </div>
+</div>

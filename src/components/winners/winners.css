@@ -1,0 +1,187 @@
+.boxWinners {
+  height: 900px;
+  width: 687px;
+  position: relative;
+}
+.boxWinners img {
+  width: 100%;
+}
+.boxWinners .box {
+  width: 376px;
+  height: 632px;
+  background: #B30314;
+  position: absolute;
+  top: 143px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.boxWinners .box .winners_name {
+  height: 104px;
+  width: 100%;
+  position: absolute;
+  top: -118px;
+  z-index: 1;
+}
+.boxWinners .box .winners_name .name {
+  width: 294px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.boxWinners .box .winners_name .left {
+  position: absolute;
+  left: -150px;
+  top: 49px;
+}
+.boxWinners .box .winners_name .right {
+  position: absolute;
+  right: -150px;
+  top: 48px;
+}
+.boxWinners .box .winners_top {
+  width: 400px;
+  height: 28px;
+  position: absolute;
+  left: -12px;
+  top: -27px;
+}
+.boxWinners .box .box_content {
+  margin: 22px auto 0;
+  width: 341px;
+  height: 590px;
+  background: #ffdb8e;
+  display: table;
+}
+.boxWinners .box .box_content .prize {
+  width: 308px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #fff2d6;
+  margin-bottom: 8px;
+  position: relative;
+}
+.boxWinners .box .box_content .prize img {
+  position: absolute;
+  width: 25px;
+  height: 28px;
+  left: 12px;
+  top: 4px;
+}
+.boxWinners .box .box_content .prize .prizeName {
+  width: 265px;
+  height: 100%;
+  float: right;
+}
+.boxWinners .box .box_content .prize .prizeName .prize_h1,
+.boxWinners .box .box_content .prize .prizeName .prize_span,
+.boxWinners .box .box_content .prize .prizeName .prize_i,
+.boxWinners .box .box_content .prize .prizeName .prizeList {
+  position: absolute;
+}
+.boxWinners .box .box_content .prize .prizeName .prizeList {
+  top: 36px;
+  width: 298px;
+}
+.boxWinners .box .box_content .prize .prizeName .prizeList .span_s {
+  width: 33.33%;
+  display: inline-block;
+}
+.boxWinners .box .box_content .prize .prizeName .prize_h1 {
+  font-family: MyFont;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fa4c17;
+  top: 4px;
+}
+.boxWinners .box .box_content .prize .prizeName .prize_span {
+  width: 42px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  bottom: 4px;
+}
+.boxWinners .box .box_content .prize .prizeName .prize_span_color {
+  color: #e03c2a;
+}
+.boxWinners .box .box_content .prize .prizeName .prize_i {
+  width: 122px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e5a03b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  right: 19px;
+  top: 8px;
+  text-align: right;
+}
+.boxWinners .box .box_content .specialAward {
+  margin-top: 13px;
+}
+.boxWinners .box .box_content .thirdPrize {
+  height: 84px;
+}
+.boxWinners .box .box_content .sunPrize {
+  margin: 0 auto;
+  width: 308px;
+  height: 268px;
+  background: #fff2d6;
+  display: table;
+  position: relative;
+}
+.boxWinners .box .box_content .sunPrize .prizeList .span_s {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.boxWinners .box .box_content .sunPrize .prize_h1 {
+  font-family: MyFont;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fa4c17;
+  margin: 7px 0 11px 14px;
+}
+.boxWinners .box .box_content .sunPrize .prize_i {
+  width: 122px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e5a03b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  right: 19px;
+  top: 8px;
+  position: absolute;
+  text-align: right;
+}
+.boxWinners .box .winners_bottom {
+  width: 394px;
+  height: 19px;
+  position: absolute;
+  left: -10px;
+  bottom: -16px;
+}
+.boxWinners .box .mouse,
+.boxWinners .box .brics {
+  position: absolute;
+}
+.boxWinners .box .mouse {
+  width: 141px;
+  height: 118px;
+  left: -128px;
+  bottom: -19px;
+}
+.boxWinners .box .brics {
+  width: 203px;
+  height: 142px;
+  bottom: -98px;
+  right: -47px;
+}

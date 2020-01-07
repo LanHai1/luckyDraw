@@ -1,0 +1,47 @@
+<div class="boxWinners boxInlineBlock 0.">
+    <div class="box boxInlineBlock">
+        <div class="winners_name clearfix">
+            <div class="fl left">
+                <img src="../../assets/img/路径 17备份.png" alt="">
+            </div>
+            <div class="fl name">
+                <img src="../../assets/img/获奖名单.png" alt="获奖名单">
+            </div>
+            <div class="fl right">
+                <img src="../../assets/img/路径 17.png" alt="">
+            </div>
+        </div>
+        <div class="winners_top">
+            <img src="../../assets/img/上卷轴.png" alt="上卷轴">
+        </div>
+        <div class="box_content">
+            <div v-for="(item, index) in prize" :key="index" class="prize" :class="item.class">
+                <img :src="item.icon" :alt="item.award">
+                <div class="prizeName">
+                    <h1 class="prize_h1">{{item.award}}</h1>
+                    <i class="prize_i">{{item.thePrize}}</i>
+                    <div v-if="item.class=='thirdPrize'" class="prizeList">
+                        <span v-for="(val, i) in item.winners" :key="i" class="span_s"> {{val}} </span>
+                    </div>
+                    <span v-else-if="item.class=='specialAward'" class="prize_span prize_span_color">{{item.winners}}</span>
+                    <div v-else-if="item.class=='secondPrize'" class="prizeList">
+                        <span v-for="(val, i) in item.winners" :key="i"  class="span_s"> {{val}} </span>
+                    </div>
+                    <span class="prize_span" v-else>{{item.winners}}</span>
+                </div>
+            </div>
+            <div class="sunPrize">
+                <h1 class="prize_h1">阳光普照奖</h1>
+                <i class="prize_i">100元红包</i>
+                <div class="prizeList">
+                    <span v-for="(val, i) in sunPrize" :key="i" class="span_s"> {{val}} </span>
+                </div>
+            </div>
+        </div>
+        <div class="winners_bottom">
+            <img src="../../assets/img/下卷轴.png" alt="下卷轴">
+        </div>
+        <img src="../../assets/img/老鼠.png" class="mouse" alt="老鼠">
+        <img src="../../assets/img/金砖.png" class="brics" alt="金砖">
+    </div>
+</div>
