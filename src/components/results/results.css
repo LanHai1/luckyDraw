@@ -12,6 +12,14 @@
   transform: translate(-46%, -50%);
   background: url("../../assets/img/draw/获奖弹窗背景.png");
 }
+.results_box .res .results_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-46%);
+  top: 272px;
+  width: 472px;
+  height: 342px;
+}
 .results_box .res .resTitle {
   position: absolute;
   font-size: 60px;
@@ -20,10 +28,14 @@
   color: #d56a20;
   left: 50%;
   top: 188px;
+  display: inline-block;
+  width: 600px;
+  text-align: center;
   transform: translateX(-46%);
 }
 .results_box .res .resTitle span {
   color: #F12F2B;
+  padding: 0 25px;
 }
 .results_box .res .resPrize {
   font-size: 36px;

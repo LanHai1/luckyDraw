@@ -7,7 +7,8 @@ const name = 'results';
 const data = function () {
     return {
         name: "",
-        award:""
+        award:"",
+        src:""
     };
 };
 
@@ -39,6 +40,7 @@ const methods = {
     getNameOrAward(val) {
         this.name = val.resNameRandom
         this.award = recognitionAward(val.thisDraw)
+        this.src = recognitionImg(val.thisDraw)
     }
 };
 
@@ -49,7 +51,8 @@ function mounted() {
 }
 
 import {
-    recognitionAward
+    recognitionAward,
+    recognitionImg
 } from "../../assets/js/award.js"
 
 // == EXPORT ==

@@ -1,5 +1,7 @@
 <template>
   <div class="homeBox">
+    <audio :src="mus" class="media-audio" muted loop autoplay ref="MusicPlay"></audio>
+    <img src="../assets/images/音乐.png" class="mus" @click="openMus" alt="播放音乐">
     <!-- 遮挡层 -->
     <div class="barrier" v-if="isTwisted">
       <!-- 扭蛋机 -->
@@ -54,7 +56,8 @@ export default {
       isTwisted: false,
       isCountdown: false,
       isResults: false,
-      thisDraw: ""
+      thisDraw: "",
+      mus:require("../assets/music/2995389531.mp3")
     };
   },
   components: {
@@ -102,13 +105,19 @@ export default {
     // 展示阳光奖
     showSun(){
       this.$refs.winners.getSunPrize()
+    },
+    openMus(){
+      this.$refs.MusicPlay.play();
     }
   },
   created() {
     storageAward();
     storagePeople();
     winnersName();
-  }
+  },
+  mounted() {
+    
+  },
 };
 </script>
 
@@ -118,6 +127,14 @@ export default {
   height: 100%;
   position: fixed;
   z-index: 9;
+  .mus{
+    position: absolute;
+    width: 33px;
+    cursor: pointer;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+  }
   .barrier {
     width: 100%;
     height: 100%;

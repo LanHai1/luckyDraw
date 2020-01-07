@@ -29,11 +29,6 @@ const components = {
 // -- WATCH --
 
 const watch = {
-    thisDrawNumber(newVal) {
-        if (newVal === 0) {
-            console.log("次数为0")
-        }
-    }
 };
 
 // -- METHODS --
@@ -121,7 +116,6 @@ const methods = {
         setTimeout(() => {
             this.$emit('updatedWinner')
         }, 3000)
-        console.log(list, i_list, recognitionAward(list.thisDraw))
     },
     draw() {
         if (!this.ican || !this.thisDrawNumber) return;
@@ -148,16 +142,12 @@ const methods = {
                     if (firstPrizeOf(this.drawPeople[i])) {
                         arr.push(this.drawPeople[i])
                         this.drawPeople.splice(i, 1)
-                        console.log(this.drawPeople, i, arr)
                     }
                 }
             }
             // 抽奖及存储
             let resNumberRandom = this.randomNum(this.drawPeople.length - 1, 0);
             resNameRandom = this.drawPeople[resNumberRandom];
-            if (firstPrizeOf(resNameRandom)) {
-                console.log("chong")
-            }
             if(arr){
                 arr.forEach(v => {
                     this.drawPeople.push(v)
@@ -165,8 +155,6 @@ const methods = {
             }
             this.drawPeople.splice(resNumberRandom, 1)
             localStorage.setItem("AwardName", JSON.stringify(this.drawPeople));
-
-            console.log(resNameRandom, this.drawPeople, "999999999999")
         }
 
         this.ballMoving(() => {
@@ -192,7 +180,6 @@ const methods = {
             }
             that.setWinnersName(val)
 
-            console.log("shhshsh", val)
             // 公布名单
             that.$emit('triggerBrotherMethod', val)
             setTimeout(function () {
@@ -210,7 +197,6 @@ function mounted() {
     let that = this;
 
     this.thisDrawNumber = recognitionAwardNumber(this.thisDraw)
-    console.log(this.thisDrawNumber, this.thisDraw, 111111)
 
     $(document).ready(function () {
         $(".game_go").click(function () {

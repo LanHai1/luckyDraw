@@ -38,6 +38,10 @@
 	/* padding-top: 90px; */
 }
 
+.game_go:hover {
+	background: url(../images/go点击时.png) no-repeat;
+}
+
 .niu_danji .wdjifen {
 	font-size: 20px;
 	color: #e00b37;

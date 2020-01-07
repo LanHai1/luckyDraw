@@ -19,6 +19,16 @@ export const recognitionAward = val => {
     return res[val];
 }
 
+export const recognitionImg = val => {
+    let res = {
+        "draw_1": require("../../assets/images/特别奖.png"),
+        "draw_2": require("../../assets/images/一等奖.png"),
+        "draw_3": require("../../assets/images/二等奖.png"),
+        "draw_4": require("../../assets/images/三等奖.png")
+    }
+    return res[val];
+}
+
 // 特别奖名单
 export const specialAwardName = () =>{
     return "王子馨"
@@ -76,25 +86,25 @@ export const storagePeople = () => {
 export const winnersName = () => {
     let list = [{
         award: "特别奖",
-        thePrize: "MacBook Pro 16寸sdbjashdb",
+        thePrize: "",
         winners: "",
         icon: require("../../assets/img/draw/特别奖.png"),
         class: "specialAward"
     }, {
         award: "一等奖",
-        thePrize: "Ipad Pro 2019",
+        thePrize: "",
         winners: "",
         icon: require("../../assets/img/draw/一等奖.png"),
         class: "firstPrize"
     }, {
         award: "二等奖",
-        thePrize: "IPhone 11",
+        thePrize: "",
         winners: [],
         icon: require("../../assets/img/draw/二等奖.png"),
         class: "secondPrize"
     }, {
         award: "三等奖",
-        thePrize: "AirPods",
+        thePrize: "",
         winners: [],
         icon: require("../../assets/img/draw/三等奖.png"),
         class: "thirdPrize"

@@ -1,51 +1,69 @@
-.results_box{
+.results_box {
     position: relative;
     width: 100%;
     height: 100%;
+
     .res {
         position: absolute;
         width: 888px;
         height: 900px;
         left: 50%;
         top: 50%;
-        transform: translate(-46%,-50%);
+        transform: translate(-46%, -50%);
         background: url("../../assets/img/draw/获奖弹窗背景.png");
-        .resTitle{
+    
+        .results_img{
             position: absolute;
-            font-size:60px;
-            font-family:MyFont;
-            font-weight:normal;
-            color:rgba(213, 106, 32, 1);
+            left: 50%;
+            transform: translateX(-46%);
+            top: 272px;
+            width: 472px;
+            height: 342px;
+        }
+
+        .resTitle {
+            position: absolute;
+            font-size: 60px;
+            font-family: MyFont;
+            font-weight: normal;
+            color: rgba(213, 106, 32, 1);
             left: 50%;
             top: 188px;
+            display: inline-block;
+            width: 600px;
+            text-align: center;
             transform: translateX(-46%);
-            span{
+
+            span {
                 color: #F12F2B;
+                padding: 0 25px;
             }
         }
+
         .resPrize {
-            font-size:36px;
-            font-family:MyFont;
-            font-weight:normal;
-            color:rgba(248, 212, 172, 1);
-            line-height:42px;
-            text-shadow:0px 2px 12px rgba(255, 246, 33, 1);
+            font-size: 36px;
+            font-family: MyFont;
+            font-weight: normal;
+            color: rgba(248, 212, 172, 1);
+            line-height: 42px;
+            text-shadow: 0px 2px 12px rgba(255, 246, 33, 1);
             position: absolute;
             left: 50%;
             top: 545px;
             transform: translateX(-46%);
         }
-        .resAward{
+
+        .resAward {
             position: absolute;
             left: 50%;
             top: 646px;
             transform: translateX(-46%);
-            font-size:36px;
-            font-family:MyFont;
-            font-weight:normal;
-            color:rgba(248, 212, 172, 1);
-            line-height:42px;
-            text-shadow:0px 2px 12px rgba(255, 246, 33, 1);
+            font-size: 36px;
+            font-family: MyFont;
+            font-weight: normal;
+            color: rgba(248, 212, 172, 1);
+            line-height: 42px;
+            text-shadow: 0px 2px 12px rgba(255, 246, 33, 1);
         }
     }
 }
