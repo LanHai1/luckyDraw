@@ -11,7 +11,7 @@ let sortRandom = (arr) => {
 // 奖项
 export const recognitionAward = val => {
     let res = {
-        "draw_1": "特别奖",
+        // "draw_1": "特别奖",
         "draw_2": "一等奖",
         "draw_3": "二等奖",
         "draw_4": "三等奖"
@@ -21,7 +21,7 @@ export const recognitionAward = val => {
 
 export const recognitionImg = val => {
     let res = {
-        "draw_1": require("../../assets/images/特别奖.png"),
+        // "draw_1": require("../../assets/images/特别奖.png"),
         "draw_2": require("../../assets/images/一等奖.png"),
         "draw_3": require("../../assets/images/二等奖.png"),
         "draw_4": require("../../assets/images/三等奖.png")
@@ -36,13 +36,13 @@ export const specialAwardName = () =>{
 
 // 一等奖除外名单
 export const firstPrizeOf = (v) =>{
-    return (v == "王建" || v == "刘佳冰")
+    return (v == "王建" || v == "伏冬哲" || v == "瞿绪标")
 }
 
 // 存储次数
 export const storageAward = () => {
     let res = {
-        draw_1: 1,
+        // draw_1: 1,
         draw_2: 1,
         draw_3: 3,
         draw_4: 5
@@ -56,7 +56,8 @@ export const storageAward = () => {
 export const storagePeople = () => {
     let people = [
         "王建",
-        "刘佳冰",
+        "伏冬哲",
+        "瞿绪标",
         "吴继红",
         "胡佳伟",
         "邵林林",
@@ -84,13 +85,7 @@ export const storagePeople = () => {
 
 // 中奖名单
 export const winnersName = () => {
-    let list = [{
-        award: "特别奖",
-        thePrize: "",
-        winners: "",
-        icon: require("../../assets/img/draw/特别奖.png"),
-        class: "specialAward"
-    }, {
+    let list = [ {
         award: "一等奖",
         thePrize: "",
         winners: "",

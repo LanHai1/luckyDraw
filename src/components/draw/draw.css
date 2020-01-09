@@ -25,38 +25,33 @@
   width: 318px;
   height: 81px;
   position: relative;
-  margin-bottom: 46px;
+  margin-bottom: 70px;
   background: #fee3c5;
   border-radius: 6px;
   cursor: pointer;
   overflow: hidden;
 }
-.boxDraw .drawZx .draw_ul li:first-child,
-.boxDraw .drawZx .draw_ul li:nth-child(2) {
+.boxDraw .drawZx .draw_ul li:first-child {
   z-index: 3;
+  margin-top: 55px;
 }
-.boxDraw .drawZx .draw_ul li:nth-child(3),
+.boxDraw .drawZx .draw_ul li:nth-child(2),
 .boxDraw .drawZx .draw_ul li:last-child {
   z-index: 1;
 }
 .boxDraw .drawZx .draw_ul li:first-child {
-  left: 244px;
-  z-index: 2;
-  background: url("../../assets/img/draw/特别奖未选中.png") 100%;
-}
-.boxDraw .drawZx .draw_ul li:nth-child(2) {
-  left: 327px;
+  left: 294px;
   z-index: 2;
   background: url("../../assets/img/draw/一等奖未选中.png") 100%;
 }
-.boxDraw .drawZx .draw_ul li:nth-child(3) {
-  left: 365px;
+.boxDraw .drawZx .draw_ul li:nth-child(2) {
+  left: 357px;
   z-index: 1;
   background: url("../../assets/img/draw/二等奖未选中.png") 100%;
 }
 .boxDraw .drawZx .draw_ul li:last-child {
   margin: 0;
-  left: 269px;
+  left: 297px;
   z-index: 1;
   background: url("../../assets/img/draw/三等奖未选中.png") 100%;
 }
@@ -91,10 +86,6 @@
 .boxDraw .drawZx .draw_ul li:hover:before {
   left: 335px;
   transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
-}
-.boxDraw .drawZx .draw_ul .draw_1:hover {
-  box-shadow: 0px 0px 20px 0px rgba(255, 246, 131, 0.86);
-  background: url("../../assets/img/draw/选中特别奖.png") 100%;
 }
 .boxDraw .drawZx .draw_ul .draw_2:hover {
   box-shadow: 0px 0px 20px 0px rgba(255, 246, 131, 0.86);

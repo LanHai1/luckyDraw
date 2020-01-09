@@ -46,11 +46,12 @@ const methods = {
                 const element = this.transparency[key];
                 if (element == 0) {
                     total++;
-                    let i = key.charAt(key.length - 1)
+                    // let i = key.charAt(key.length-1) 更新名单后
+                    let i = key.charAt(key.length-1) -1
                     setTimeout(() => {
                         $(`.draw_ul>li:nth-child(${i})`).css("opacity", "0.5")
                     }, 0)
-                    if (total===4){
+                    if (total===3){
                         if(val){
                             setTimeout(() => {
                                 this.$emit('showSun')
@@ -72,7 +73,7 @@ const methods = {
 function mounted() {
     // 奖特效
     setTimeout(() => {
-        this.itemsDraw = ["draw_1", "draw_2", "draw_3", "draw_4"]
+        this.itemsDraw = [ "draw_2", "draw_3", "draw_4"]
     }, 0)
 
     this.getTransparency(1)

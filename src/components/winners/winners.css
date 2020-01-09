@@ -123,13 +123,16 @@
 .boxWinners .box .box_content .specialAward {
   margin-top: 13px;
 }
+.boxWinners .box .box_content .firstPrize {
+  margin-top: 13px;
+}
 .boxWinners .box .box_content .thirdPrize {
   height: 84px;
 }
 .boxWinners .box .box_content .sunPrize {
   margin: 0 auto;
   width: 308px;
-  height: 268px;
+  height: 336px;
   background: #fff2d6;
   display: table;
   position: relative;

@@ -91,7 +91,6 @@ const methods = {
         }, 3100)
 
         //动画结束 
-
         setTimeout(() => {
             this.ican = true;
             $(".zjdl").addClass("none").removeClass("dila_Y");
@@ -137,7 +136,7 @@ const methods = {
             this.drawPeople = this.sortRandom(this.drawPeople);
 
             let arr = []
-            if (this.thisDraw === "draw_2") {
+            if (this.thisDraw === "draw_2" || this.thisDraw === "draw_3") {
                 for (var i = this.drawPeople.length - 1; i >= 0; i--) {
                     if (firstPrizeOf(this.drawPeople[i])) {
                         arr.push(this.drawPeople[i])

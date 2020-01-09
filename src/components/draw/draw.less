@@ -27,43 +27,53 @@
                 width: 318px;
                 height: 81px;
                 position: relative;
-                margin-bottom: 46px;
+                margin-bottom: 70px;
                 background: rgba(254, 227, 197, 1);
                 border-radius: 6px;
                 cursor: pointer;
                 overflow: hidden;
 
-                &:first-child,
-                &:nth-child(2) {
+                &:first-child {
                     z-index: 3;
+                    margin-top: 55px;
                 }
 
-                &:nth-child(3),
+                &:nth-child(2),
                 &:last-child {
                     z-index: 1;
                 }
 
-                &:first-child {
-                    left: 244px;
-                    z-index: 2;
-                    background: url("../../assets/img/draw/特别奖未选中.png") 100%;
-                }
+                // &:first-child,
+                // &:nth-child(2) {
+                //     z-index: 3;
+                // }
 
-                &:nth-child(2) {
-                    left: 327px;
+                // &:nth-child(3),
+                // &:last-child {
+                //     z-index: 1;
+                // }
+
+                // &:first-child {
+                //     left: 244px;
+                //     z-index: 2;
+                //     background: url("../../assets/img/draw/特别奖未选中.png") 100%;
+                // }
+
+                &:first-child {
+                    left: 294px;
                     z-index: 2;
                     background: url("../../assets/img/draw/一等奖未选中.png") 100%;
                 }
 
-                &:nth-child(3) {
-                    left: 365px;
+                &:nth-child(2) {
+                    left: 357px;
                     z-index: 1;
                     background: url("../../assets/img/draw/二等奖未选中.png") 100%;
                 }
 
                 &:last-child {
                     margin: 0;
-                    left: 269px;
+                    left: 297px;
                     z-index: 1;
                     background: url("../../assets/img/draw/三等奖未选中.png") 100%;
                 }
@@ -80,7 +90,7 @@
                 width: calc(100% + 20px);
                 color: #fff;
                 border-radius: 2px;
-                
+
             }
 
             li:after {
@@ -109,30 +119,30 @@
                 transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
             }
 
-            .draw_1 {
-                &:hover {
-                    box-shadow:0px 0px 20px 0px rgba(255,246,131,0.86);
-                    background: url("../../assets/img/draw/选中特别奖.png") 100%;
-                }
-            }
+            // .draw_1 {
+            //     &:hover {
+            //         box-shadow:0px 0px 20px 0px rgba(255,246,131,0.86);
+            //         background: url("../../assets/img/draw/选中特别奖.png") 100%;
+            //     }
+            // }
 
             .draw_2 {
                 &:hover {
-                    box-shadow:0px 0px 20px 0px rgba(255,246,131,0.86);
+                    box-shadow: 0px 0px 20px 0px rgba(255, 246, 131, 0.86);
                     background: url("../../assets/img/draw/选中一等奖.png") 100%;
                 }
             }
 
             .draw_3 {
                 &:hover {
-                    box-shadow:0px 0px 20px 0px rgba(255,246,131,0.86);
+                    box-shadow: 0px 0px 20px 0px rgba(255, 246, 131, 0.86);
                     background: url("../../assets/img/draw/选中二等奖.png") 100%;
                 }
             }
 
             .draw_4 {
                 &:hover {
-                    box-shadow:0px 0px 20px 0px rgba(255,246,131,0.86);
+                    box-shadow: 0px 0px 20px 0px rgba(255, 246, 131, 0.86);
                     background: url("../../assets/img/draw/选中三等奖.png") 100%;
                 }
             }
